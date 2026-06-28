@@ -1,0 +1,490 @@
+.worker-page {
+  width: 100%;
+  max-width: 390px;
+  height: 100vh;
+  margin: auto;
+  background: #f7f1e7;
+  position: relative;
+  overflow-y: auto;
+  padding-bottom: 90px;
+}
+
+/* HEADER */
+
+.worker-header {
+  background: #eb9d7d;
+
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+
+  padding: 14px 16px 22px;
+}
+
+.worker-logo {
+  text-align: center;
+
+  color: white;
+
+  font-size: 22px;
+
+  font-weight: 300;
+
+  margin-bottom: 8px;
+}
+
+.worker-greeting {
+  color: white;
+
+  font-size: 16px;
+
+  margin-bottom: 2px;
+}
+
+.worker-header h1 {
+  color: white;
+
+  font-size: 20px;
+
+  margin-bottom: 16px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  background: #ece7df;
+
+  border: 2px solid #9b938d;
+
+  border-radius: 14px;
+
+  height: 40px;
+
+  width: 95%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 12px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+}
+
+/* SECTION */
+
+.section {
+  padding: 14px 16px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.section-header h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.section-header span {
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+/* JOBS */
+
+.job-card {
+  border: 2px solid #9b938d;
+
+  border-radius: 12px;
+
+  background: #f4ede4;
+
+  padding: 10px;
+
+  margin-bottom: 10px;
+}
+
+.job-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.job-location {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  font-size: 12px;
+}
+
+.job-price {
+  font-size: 14px;
+}
+
+.job-card button {
+  border: 2px solid #9b938d;
+
+  background: #f3ede5;
+
+  border-radius: 14px;
+
+  width: 60px;
+
+  height: 32px;
+
+  cursor: pointer;
+}
+
+/* PUBLICACIONES */
+
+.publication-card {
+  border: 2px solid #9b938d;
+
+  border-radius: 12px;
+
+  background: #f4ede4;
+
+  padding: 12px;
+
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.publication-title {
+  font-size: 15px;
+}
+
+.publication-subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+.status {
+  font-size: 14px;
+}
+
+.active {
+  color: #222;
+}
+
+.paused {
+  color: #444;
+}
+
+/* CHAT */
+
+.chat-box {
+  border: 2px solid #9b938d;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: #f4ede4;
+}
+
+.chat-top {
+  text-align: center;
+
+  font-size: 12px;
+
+  border-bottom: 1px solid #aaa;
+
+  padding: 4px;
+}
+
+.chat-item {
+  display: flex;
+
+  gap: 8px;
+
+  padding: 8px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #bdbdbd;
+}
+
+.chat-item p {
+  font-size: 10px;
+}
+
+.chat-footer {
+  text-align: center;
+
+  font-size: 10px;
+
+  padding: 6px;
+}
+
+/* NAVBAR */
+
+.bottom-navbar {
+  position: fixed;
+
+  bottom: 0;
+
+  width: 390px;
+
+  height: 62px;
+
+  background: #f7f1e7;
+
+  border-top: 1px solid #9b938d;
+
+  display: flex;
+}
+
+.nav-item {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 2px;
+
+  font-size: 10px;
+
+  color: #666;
+}
+
+.nav-item.active {
+  color: black;
+}
+
+/* =======================================
+   TIPOGRAFIA GENERAL
+======================================= */
+
+.worker-page {
+  font-family:
+    Inter,
+    Poppins,
+    sans-serif;
+}
+
+/* =======================================
+   HOVERS GENERALES
+======================================= */
+
+.job-card,
+.publication-card,
+.chat-item,
+.job-card button {
+  transition: all .25s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.08);
+}
+
+.publication-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.08);
+}
+
+.chat-item:hover {
+  background: rgba(0,0,0,.03);
+}
+
+.job-card button:hover {
+  transform: scale(1.05);
+
+  background: #ece6df;
+}
+
+.section-header span {
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.section-header span:hover {
+  color: #8d5cf6;
+}
+
+/* =======================================
+   TRABAJOS
+======================================= */
+
+.job-title-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.job-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+.blue {
+  background: #5a8cff;
+}
+
+.red {
+  background: #ff5d5d;
+}
+
+.green {
+  background: #57d957;
+}
+
+.yellow {
+  background: #f0c64f;
+}
+
+/* =======================================
+   PUBLICACIONES
+======================================= */
+
+.publication-title-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+}
+
+.active-dot {
+  background: #4ecf63;
+}
+
+.paused-dot {
+  background: #ff5b5b;
+}
+
+/* =======================================
+   CHAT
+======================================= */
+
+.chat-top {
+  background: #ece7df;
+
+  font-weight: 500;
+}
+
+.chat-avatar {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: #d5d0c8;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  color: #555;
+
+  flex-shrink: 0;
+}
+
+.chat-content {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.chat-content strong {
+  font-size: 12px;
+}
+
+.chat-content p {
+  font-size: 10px;
+
+  color: #777;
+
+  margin-top: 2px;
+}
+
+/* =======================================
+   NAVBAR
+======================================= */
+
+.nav-item {
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+.nav-item:hover {
+  color: #8d5cf6;
+
+  transform: translateY(-2px);
+}
+
+/* =======================================
+   HEADER
+======================================= */
+
+.worker-header h1 {
+  font-weight: 700;
+}
+
+.search-box {
+  transition: .25s;
+}
+
+.search-box:focus-within {
+  transform: scale(1.02);
+
+  box-shadow:
+    0 0 0 3px rgba(141,92,246,.15);
+}

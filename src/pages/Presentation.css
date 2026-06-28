@@ -1,0 +1,285 @@
+.presentation-page {
+
+    width: 100%;
+    max-width: 390px;
+    height: 100vh;
+
+    margin: auto;
+
+    background: linear-gradient(
+        180deg,
+        #6551A7 0%,
+        #5A478F 55%,
+        #564487 100%
+    );
+
+    overflow: hidden;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.presentation-content {
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: flex-start;
+
+    padding: 90px 28px 45px;
+}
+
+.presentation-logo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    user-select: none;
+
+    margin-top: 30px;
+}
+
+.logo-c {
+
+    font-size: 130px;
+
+    font-weight: 800;
+
+    line-height: .8;
+
+    letter-spacing: -10px;
+
+    color: #8148ff;
+
+    text-shadow:
+        0 15px 30px rgba(0,0,0,.18);
+}
+
+.logo-c span {
+
+    color: #ff9330;
+}
+
+.logo-text {
+
+    margin-top: -6px;
+
+    font-size: 66px;
+
+    font-weight: 300;
+
+    letter-spacing: -3px;
+
+    color: white;
+
+    line-height: 1;
+
+    text-shadow:
+        0 8px 20px rgba(0,0,0,.15);
+}
+
+.logo-text span {
+
+    color: #ff9330;
+
+    font-weight: 600;
+}
+
+.logo-line {
+
+    width: 82px;
+
+    height: 3px;
+
+    border-radius: 50px;
+
+    margin-top: 16px;
+
+    background: #ff9330;
+}
+
+.presentation-slogan {
+
+    margin-top: 42px;
+
+    text-align: center;
+
+    color: rgba(255,255,255,.95);
+
+    font-size: 22px;
+
+    line-height: 1.45;
+
+    font-style: italic;
+
+    font-weight: 400;
+
+    max-width: 300px;
+}
+
+.presentation-slogan strong {
+
+    font-weight: 700;
+}
+
+.presentation-buttons {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    margin-bottom: 75px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.start-btn {
+
+    height: 64px;
+
+    border: 2px solid white;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: .4px;
+
+    cursor: pointer;
+
+    transition: .28s;
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.16);
+}
+
+.start-btn:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    background: rgba(255,255,255,.16);
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,.22);
+}
+
+.start-btn:active {
+
+    transform:
+        scale(.98);
+}
+
+.login-btn-presentation {
+
+    height: 50px;
+
+    border-radius: 18px;
+
+    border: 2px solid rgba(255,255,255,.8);
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.login-btn-presentation:hover {
+
+    background: rgba(255,255,255,.12);
+
+    transform: translateY(-2px);
+}
+
+.login-btn-presentation:active {
+
+    transform: scale(.98);
+}
+
+.start-btn,
+.login-btn-presentation{
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform .18s ease,
+        box-shadow .25s ease,
+        background .25s ease,
+        border-color .25s ease;
+
+    cursor:pointer;
+}
+
+.start-btn:hover,
+.login-btn-presentation:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.18);
+}
+
+.start-btn:active,
+.login-btn-presentation:active{
+
+    transform: translateY(1px) scale(.98);
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.18);
+}
+
+.start-btn::before,
+.login-btn-presentation::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:70%;
+
+    height:100%;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,.35),
+            transparent
+        );
+
+    transition:.7s;
+}
+
+.start-btn:hover::before,
+.login-btn-presentation:hover::before{
+
+    left:150%;
+}
